@@ -38,7 +38,7 @@ public class MonteCarlo extends Attributes {
 				+ "'done_percent': " + format.format(row.get("done_percent")) + ", "
 				+ "'productivity_new': " + format.format(row.get("productivity_new")) + ", "
 				+ "'ep': " + format.format(row.get("ep")) + ", "
-				+ "'verbose': " + row.get("verbose") + "}");
+				+ "'verbose': " + row.get("verbose").toString().substring(0, 1).toUpperCase() + row.get("verbose").toString().substring(1) + "}");
 		return result.toString();
 	}
 	
@@ -54,7 +54,7 @@ public class MonteCarlo extends Attributes {
 
 	public static void main(String[] args) {
 		Arguments loadedArgs = new Arguments(args);
-		MonteCarlo.monteCarloMain(loadedArgs.repeat, loadedArgs.seed, loadedArgs.verbose);
+		monteCarloMain(loadedArgs.repeat, loadedArgs.seed, loadedArgs.verbose);
 	}
 	
 	
