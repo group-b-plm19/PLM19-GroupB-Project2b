@@ -15,7 +15,7 @@ Tmp=${Tmp:-/tmp/$USER/ide/$$.$RANDOM}
 Ide=${Ide:-$(dirname $PWD)}
 Bin=${Bin:-"$Tmp"/bin}
 Etc=${Etc:-"$Ide"/etc}
-Src=${Src:-"$Ide"/src}
+Src=${Src:-"$Ide"/original}
 Doc=${Doc:-"$Ide"/docs}
 Test=${Test:-"$Ide"/test}
 
