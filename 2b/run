@@ -1,11 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-PATH=“$(pwd)/bin:$PATH”
-export Etc=$(pwd)/etc
-export Test=$(pwd)/test
-export Bin=$(pwd)/bin
-export Src=$(pwd)/original
-export Lua=$(which lua)
-export PLATFORM="LINUX"
+sudo apt install default-jre
 
-make eg1
+cd etc
+
+./ide | make eg0
