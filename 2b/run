@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt install default-jre -f
-sudo apt install default-jdk -f
+sudo apt install -y default-jre default-jdk
 
 cd etc
 
