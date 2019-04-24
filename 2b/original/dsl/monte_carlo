@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-javac ../src/Arguments.java
-javac ../src/Attributes.java
-javac ../src/MonteCarlo.java
+javac Arguments.java
+javac Attributes.java
+javac MonteCarlo.java
 
-java ../src/MonteCarlo $*
+java MonteCarlo $*
