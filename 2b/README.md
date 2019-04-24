@@ -1,12 +1,10 @@
-# Data mining Using/Used-by Optimizers
+## The Report
 
-Some demonstration code of pipelines in DUO (data mining using/used-by optimizers).
+located at `./report.pdf`
 
-e.g.
+## Source
 
-```
-data | dom | label | discretize | best
-```
+located in `./src`
 
 ## Install
 
@@ -17,18 +15,10 @@ brew install lua
 brew install luajit 
 sudo -H pip install pycco
 ```
-Now:
-```
-cd src
 
-../etc/ide
-
-```
 ## Running
 
-From then on, just
+There are two files that will assist with running the project. The first is located at `./run` and this will run a test through the entire pipe. The second is located at `./run_interactive`, which will allow you to input the test case from the makefile that you would like to run.
 
-```
-cd src
-../etc/ide
-```
+you may need to run
+`chmod +x run` and/or `chmod +x run_interactive`
